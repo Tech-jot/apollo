@@ -1,0 +1,100 @@
+.servicesBox {
+    background: linear-gradient(99.53deg, rgba(5, 145, 203, 0.1) 0%, rgba(250, 129, 20, 0.1) 99.81%);
+    padding: 100px 0;
+
+    & .servicesInner {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1560px;
+    }
+
+    & .servicesInnerBox {
+        padding: 100px;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 100px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 44px 0px #0000001A;
+
+
+        & .servicesLeftBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            & .servicesHeading {
+                color: #000;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 20.37px;
+
+                & svg {
+                    margin-left: 15px;
+                }
+            }
+
+            & .overviewHeading {
+                & h2 {
+                    font-size: 50px;
+                    font-weight: 500;
+                    line-height: 68px;
+                    color: #000;
+                    margin-bottom: 30px;
+                    margin-top: 0;
+                }
+
+                & p {
+                    font-size: 23px;
+                    font-weight: 350;
+                    line-height: 37px;
+                    color: #000;
+                }
+            }
+        }
+
+        & .servicesRightBox {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            & .servicesCard {
+                display: flex;
+                gap: 22px;
+                align-items: center;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                padding: 30px;
+                position: relative;
+
+                &:nth-last-child(-n+2) {
+                    border-bottom: 0;
+                }
+
+                &:nth-child(odd) {
+                    border-right: 1px solid rgba(0, 0, 0, 0.1);
+                }
+
+                & .servicesIcon {}
+
+                & .servicesDetail {
+                    & h3 {
+                        font-size: 21px;
+                        font-weight: 500;
+                        line-height: 25.16px;
+                        color: #000;
+                        margin-bottom: 12px;
+                        margin-top: 0;
+                    }
+
+                    & p {
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 23px;
+                        color: #000;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

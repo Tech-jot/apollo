@@ -1,0 +1,160 @@
+.whoWeAreWrapper {
+    display: flex;
+    max-width: 1560px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 100px;
+    padding: 120px 0;
+
+    & .leftWrapper {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        & .arrowHeading {
+            color: #000;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 20.37px;
+
+            & svg {
+                margin-left: 15px;
+            }
+        }
+
+        & .gradientCard {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            & .card {
+                background: linear-gradient(90deg, #FA8114 0%, #7C8972 51.28%, #0591CB 100%);
+                border-radius: 30px;
+                padding: 20px 35px;
+                position: relative;
+                z-index: 1;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: white;
+                    border-radius: 26px;
+                    margin: 3px;
+                    z-index: -1;
+                }
+
+                & h1 {
+                    font-size: 90px;
+                    font-weight: 400;
+                    line-height: 114.7px;
+                    letter-spacing: 0.04em;
+                    color: #FA8114;
+                    margin: 0;
+                    padding: 0;
+
+                    & span {
+                        font-size: 67px;
+                        font-weight: 300;
+                        line-height: 80.27px;
+                        color: #000000;
+                    }
+                }
+
+                & p {
+                    color: #000000;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.17px;
+                    letter-spacing: 0.2em;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    & .rightWrapper {
+        flex: 3;
+
+        & .visionHeading {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+            & h1 {
+                font-size: 50px;
+                font-weight: 600;
+                line-height: 68px;
+                color: #000000;
+            }
+        }
+
+        & .visionDetails {
+            display: grid;
+            gap: 50px;
+            grid-template-columns: 1fr 1fr;
+
+            & .leftImage {
+                & img {
+                    width: 100%;
+                    border-radius: 30px;
+                }
+            }
+
+            & .rightCard {
+                & .cardBox {
+                    margin-bottom: 60px;
+
+                    & h4 {
+                        color: #000000;
+                        font-size: 25px;
+                        font-weight: 500;
+                        line-height: 20px;
+                        margin-top: 0;
+                        margin-bottom: 16px;
+                    }
+
+                    & p {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 16px;
+                        color: #000;
+                        font-weight: 400;
+                        line-height: 29px;
+                    }
+                }
+
+                & .readMoreButton {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 21.56px;
+                    background-color: #fff;
+                    border: 1px solid #0591CB;
+                    position: relative;
+                    width: max-content;
+                    color: #000;
+                    width: 236px;
+                    border-radius: 30px;
+                    overflow: hidden;
+                    z-index: 9;
+
+                    /* &::after {
+                        content: "";
+                        background-color: #0591CB12;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        z-index: 0;
+                        left: 0;
+                        top: 0;
+                    } */
+                }
+            }
+        }
+    }
+}
